@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  front:
+    container_name: front-dev
+    image: node:17-alpine
+    working_dir: /app
+    command: yarn start
+    volumes:
+      - './front:/app'
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+    ports:
+      - '3000:3000'
+
