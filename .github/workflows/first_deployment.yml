@@ -1,0 +1,32 @@
+name: First Deployment
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Add .env
+        run: echo -e "${{ secrets.ENV }}" > .env
+      - name: Build Images
+        run: docker-compose build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Connect to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_ADDRESS }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            cd /home 
+            mkdir -p ${{ github.repository }}
+            rm -r ${{ github.repository }}
+            git clone git@github.com:${{ github.repository }}.git ${{ github.repository }}
+            cd ${{ github.repository }}
+            echo -e "${{ secrets.ENV }}" > .env
+            docker-compose up -d --build --force-recreate
+
