@@ -1,0 +1,23 @@
+{
+    "ui": {
+        "background": {
+            "default": "/img/monterey-bg.jpg",
+            "available": [
+                "/img/monterey-bg.jpg",
+                "/img/rose-bg.jpg"
+            ]
+        }
+    },
+    "projects":[
+    ],
+    "dock":[
+        {
+            "name":"Finder", 
+            "icone": "/img/dock/finder.png"
+        },
+        {
+            "name": "Decrypt.io",
+            "icone": "http://decrypt-io.com/apple-touch-icon.png"
+        }
+    ]
+}

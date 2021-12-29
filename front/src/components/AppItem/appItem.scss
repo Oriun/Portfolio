@@ -1,0 +1,22 @@
+.app-item {
+    aspect-ratio: 1;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    &.active::after {
+        content: "";
+        background-color: rgb(32, 32, 32, 0.5);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 3px);
+    }
+}
