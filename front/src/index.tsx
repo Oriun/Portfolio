@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import dayjs from 'dayjs';
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
+import 'dayjs/locale/fr'
+
+dayjs.locale('fr')
+dayjs.extend(LocalizedFormat)
 
 ReactDOM.render(
   <React.StrictMode>

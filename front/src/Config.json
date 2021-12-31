@@ -8,16 +8,53 @@
             ]
         }
     },
-    "projects":[
-    ],
     "dock":[
         {
             "name":"Finder", 
-            "icone": "/img/dock/finder.png"
+            "icone": "/img/dock/finder.png",
+            "mode": "cover"
+        },
+        {
+            "name": "Safari",
+            "icone": "/img/dock/safari.svg",
+            "mode": "contain"
         },
         {
             "name": "Decrypt.io",
-            "icone": "http://decrypt-io.com/apple-touch-icon.png"
+            "icone": "http://decrypt-io.com/apple-touch-icon.png",
+            "mode": "contain"
+        },
+        {
+            "name": "Khnoum",
+            "icone": "",
+            "mode": "cover"
+        },
+        {
+            "name": "What'sHack",
+            "icone": "",
+            "mode": "cover"
+        },
+        {
+            "name": "Gant",
+            "icone": "",
+            "mode": "cover"
+        },
+        {
+            "name": "Music",
+            "icone": "",
+            "mode": "cover"
+        },
+        {
+            "name": "Contact",
+            "icone": "",
+            "mode": "cover"
+        }
+    ],
+    "projects":[
+        {
+            "type": "iframe",
+            "multipleWindows": false,
+            "name": "Decrypt.io"
         }
     ]
 }
