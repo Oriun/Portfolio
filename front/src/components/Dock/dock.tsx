@@ -7,7 +7,7 @@ const Bottom = () => {
     return (
         <div className="dock">
           {Config.dock.map((app, i) => (
-            <AppItem key={app.name} active={!(i % 3)} {...app}/>
+            <AppItem key={app.name} {...app}/>
           ))}
         </div>
     )

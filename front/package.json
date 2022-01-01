@@ -10,6 +10,7 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "clone": "^2.1.2",
     "dayjs": "^1.10.7",
     "deep-equal": "^2.0.5",
     "react": "^17.0.2",
@@ -65,6 +66,7 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
+    "@types/clone": "^2.1.1",
     "@types/deep-equal": "^1.0.1",
     "webpack": "^5.65.0"
   }

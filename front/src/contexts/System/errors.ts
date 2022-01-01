@@ -1,10 +1,11 @@
-type SystemErrorTypes = 'alr-opn'
+type SystemErrorTypes = 'alr-opn' | 'unk-ress'
 
 type typeToMessageType = {
     [key in SystemErrorTypes]: string;
 };
 const typeToMessage: typeToMessageType = {
-    "alr-opn": "This project is already open and does not allow multiple windows"
+    "alr-opn": "This project is already open and does not allow multiple windows",
+    "unk-ress": "Unknown ressource"
 }
 
 export default class SystemError extends Error { 

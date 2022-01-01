@@ -35,7 +35,7 @@
             "mode": "cover"
         },
         {
-            "name": "Gant",
+            "name": "Gantt",
             "icone": "",
             "mode": "cover"
         },
@@ -52,9 +52,44 @@
     ],
     "projects":[
         {
-            "type": "iframe",
-            "multipleWindows": false,
-            "name": "Decrypt.io"
+            "name":"Finder", 
+            "type": "finder",
+            "multipleWindows": true
+        },
+        {
+            "name":"Safari", 
+            "type": "browser",
+            "multipleWindows": true
+        },
+        {
+            "name":"Decrypt.io", 
+            "type": "custom",
+            "multipleWindows": false
+        },
+        {
+            "name":"Khnoum", 
+            "type": "custom",
+            "multipleWindows": false
+        },
+        {
+            "name":"What'sHack", 
+            "type": "custom",
+            "multipleWindows": false
+        },
+        {
+            "name":"Gantt", 
+            "type": "custom",
+            "multipleWindows": false
+        },
+        {
+            "name":"Music", 
+            "type": "music",
+            "multipleWindows": false
+        },
+        {
+            "name":"Contact", 
+            "type": "contact",
+            "multipleWindows": false
         }
     ]
 }

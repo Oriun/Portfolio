@@ -1,11 +1,15 @@
 import React from "react";
 import Resizable from "../Resizable";
 import "./window.scss";
+import { Rect } from '../../types';
+import System from 'src/contexts/System';
 
 type WindowProps = {
   Head?: React.ReactNode;
   Content?: React.ReactNode;
   Actions?: React.ReactNode;
+  rect: Rect,
+  winKey: number
 };
 
 const DefaultContent = (): JSX.Element => {
@@ -17,13 +21,15 @@ const DefaultContent = (): JSX.Element => {
 const Window = ({
   Head = "New Window",
   Content = <DefaultContent />,
-  Actions
+  Actions,
+  rect,
+  winKey
 }: WindowProps) => {
   return (
-    <Resizable tag="article" className="window" style={{ top: 120, left: 180, bottom: 128, right: 180 }}>
+    <Resizable tag="article" className="window" style={{ ...rect }}>
       <div className="window-head">
           <div className="window-button">
-              <div/>
+              <div onClick={()=>System.closeWindow(winKey)}/>
               <div/>
               <div/>
           </div>

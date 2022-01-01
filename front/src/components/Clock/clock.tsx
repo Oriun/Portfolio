@@ -1,6 +1,5 @@
 import dayjs from "dayjs";
 import React from "react";
-import "./clock.scss";
 
 type ClockProps = {
   tag?: string;
@@ -17,9 +16,9 @@ const Clock = ({ tag = "span", className, id }: ClockProps) => {
         let finalString = ''
         const date = dayjs()
         // Do some processing
-        finalString = date.format('ddd MMM YY[&nbsp;&nbsp;&nbsp;]LT') // Provisory
+        finalString = date.format('llll') // Provisory
         
-        ref.current.innerHTML = finalString
+        ref.current.innerHTML = finalString[0].toUpperCase() + finalString.slice(1)
     }
     interval.current = setInterval(update, 1000) as any as number;
     return ()=>clearInterval(interval.current || 0)
