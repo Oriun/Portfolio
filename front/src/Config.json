@@ -6,90 +6,149 @@
                 "/img/monterey-bg.jpg",
                 "/img/rose-bg.jpg"
             ]
+        },
+        "color": {
+            "blue": "#0070c9"
         }
     },
-    "dock":[
+    "dock": [
         {
-            "name":"Finder", 
-            "icone": "/img/dock/finder.png",
-            "mode": "cover"
+            "name": "Finder",
+            "icone": "/img/apps/finder.png",
+            "background": "white",
+            "action": "open:Finder",
+            "options": null
         },
         {
             "name": "Safari",
-            "icone": "/img/dock/safari.svg",
-            "mode": "contain"
+            "icone": "/img/apps/safari.png",
+            "background": "white",
+            "action": "open:Safari",
+            "options": null
         },
         {
             "name": "Decrypt.io",
             "icone": "http://decrypt-io.com/apple-touch-icon.png",
-            "mode": "contain"
+            "background": "white",
+            "action": "open:Safari",
+            "options": {
+                "url": "http://decrypt-io.com"
+            }
         },
         {
             "name": "Khnoum",
-            "icone": "",
-            "mode": "cover"
+            "icone": "https://projet-khnoum.fr/logo.webp",
+            "background": "black",
+            "action": "open:Safari",
+            "options": {
+                "url": "https://projet-khnoum.fr",
+                "ratio": "16:9"
+            }
         },
         {
             "name": "What'sHack",
             "icone": "",
-            "mode": "cover"
+            "background": "white",
+            "action": "open:Safari",
+            "options": null
         },
         {
             "name": "Gantt",
             "icone": "",
-            "mode": "cover"
+            "background": "white",
+            "action": "open:Safari",
+            "options": {
+                "url": "https://gantt.nuiro.me"
+            }
         },
         {
             "name": "Music",
-            "icone": "/img/dock/apple-music.png",
-            "mode": "cover"
+            "icone": "/img/apps/apple-music.png",
+            "background": "white",
+            "action": "open:music",
+            "options": null
         },
         {
             "name": "Contact",
-            "icone": "",
-            "mode": "cover"
+            "icone": "/img/apps/mail.png",
+            "background": "white",
+            "action": "open:Mail",
+            "options": null
         }
     ],
-    "projects":[
+    "projects": [
         {
-            "name":"Finder", 
+            "name": "Finder",
             "type": "finder",
             "multipleWindows": true
         },
         {
-            "name":"Safari", 
+            "name": "Safari",
             "type": "browser",
             "multipleWindows": true
         },
         {
-            "name":"Decrypt.io", 
+            "name": "Decrypt.io",
             "type": "custom",
             "multipleWindows": false
         },
         {
-            "name":"Khnoum", 
+            "name": "Khnoum",
             "type": "custom",
             "multipleWindows": false
         },
         {
-            "name":"What'sHack", 
+            "name": "What'sHack",
             "type": "custom",
             "multipleWindows": false
         },
         {
-            "name":"Gantt", 
+            "name": "Gantt",
             "type": "custom",
             "multipleWindows": false
         },
         {
-            "name":"Music", 
+            "name": "Music",
             "type": "music",
             "multipleWindows": false
         },
         {
-            "name":"Contact", 
+            "name": "Contact",
             "type": "contact",
             "multipleWindows": false
         }
-    ]
+    ],
+    "desktop": [
+        {
+            "pos": {
+                "x": -2,
+                "y": 1
+            },
+            "image": "/img/folders/web-dev.png",
+            "name": "Compétences",
+            "action": "open:Finder",
+            "options": {
+                "path": "/c/Emmanuel_Nuiro/skills"
+            }
+        }
+    ],
+    "finder": {
+        "bookmarks": [
+            {
+                "name": "Compétences",
+                "path": "/c/Emmanuel_Nuiro/skills",
+                "icone": "icone:bi/BiCodeAlt"
+            },
+            {
+                "name": "Formations",
+                "path": "/c/Emmanuel_Nuiro/studies",
+                "icone": ""
+            },
+            {
+                "name": "Expériences",
+                "path": "/c/Emmanuel_Nuiro/experiences",
+                "icone": ""
+            }
+        ]
+    }
 }

@@ -1,10 +1,21 @@
-import React from "react";
 import "./App.css";
+import React from "react";
+import System from "./contexts/System";
+
+/** Components **/
 import Dock from "./components/Dock";
 import Topbar from "./components/Topbar";
 import Window from "./components/Window";
-import Config from "./Config.json";
-import System from "./contexts/System";
+import Desktop from "./components/Desktop";
+
+/** Views **/
+import Browser from "./views/Browser";
+import Finder from "./views/Finder";
+
+const typeToCompoent : { [key:string] : (props:any)=>JSX.Element } = {
+  "browser": Browser,
+  "finder": Finder
+}
 
 const App = (): JSX.Element => {
   const { windows, background } = System.useSystem((data) => ({
@@ -12,24 +23,20 @@ const App = (): JSX.Element => {
     background: data.background,
   }));
   console.log(windows, background);
-  React.useEffect(() => {
-    setTimeout(() => {
-      // System.changeBackground(Config.ui.background.available.at(-1)!)
-    }, 5_000);
-  }, []);
   const WindowStack = React.useMemo(() => {
-    return windows.map(win => (
-      <Window
+    return windows.map(win => {
+      const Component = (win.type in typeToCompoent) ? typeToCompoent[win.type] : Window
+      return <Component
         Head={win.name}
-        rect={win.rect}
-        key={win.key}
         winKey={win.key}
+        {...win}
       />
-    ));
+    });
   }, [windows]);
   return (
     <main style={{ backgroundImage: `url("${background}")` }}>
       <Topbar />
+      <Desktop />
       {WindowStack}
       <Dock />
     </main>

@@ -5,6 +5,7 @@
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -25,12 +26,18 @@
     }
     &:hover::before {
         content: var(--app_name, "helloWorld");
-        background-color: rgb(255, 255, 255, 0.2);
+        background-color: rgb(0, 0, 0, 0.8);
         // background-color: rgb(32, 32, 32, 0.5);
         border-radius: 4px;
         position: relative;
         top: -64px;
         padding: 4px 8px;
         color: #f2f2f2;
+
+        font-family: var(--sf);
+
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border: 1px inset rgb(255, 255, 255, 0.2);
+        outline: 1px solid rgb(0, 0, 0, 0.2);
     }
 }

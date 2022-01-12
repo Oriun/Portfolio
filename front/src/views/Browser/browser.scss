@@ -1,0 +1,45 @@
+.browser {
+    .browser-head {
+        height: 40px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: 33px 1fr 33px;
+        column-gap: 9px;
+        align-items: center;
+        > * {
+            height: 28px;
+        }
+        > svg {
+            width: 33px;
+        }
+        .browser-search-bar {
+            border-radius: 6px;
+            background-color: rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            font-family: var(--sf);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.004em;
+
+            color: #4c4c4c;
+            > svg {
+                height: 13px;
+                position: absolute;
+                right: 7px;
+                top: 7px;
+                cursor: pointer;
+            }
+        }
+    }
+    > iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-top: 1px solid grey;
+    }
+}

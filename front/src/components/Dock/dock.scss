@@ -1,17 +1,11 @@
 .dock {
     position: relative;
     bottom: 4px;
-    background-color: rgb(255, 255, 255, 0.2);
     border-radius: 20px;
     display: flex;
     align-items: center;
-    box-sizing: border-box;
     padding: 12px 12px 16px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    border: 1px inset rgb(255, 255, 255, 0.2);
-    outline: 1px solid rgb(255, 255, 255, 0.2);
+    z-index: 1;
     > *:not(:last-child) {
         margin-right: 12px;
     }

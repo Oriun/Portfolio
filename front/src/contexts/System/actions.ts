@@ -1,24 +1,20 @@
-import Source, { SystemType } from "./source";
+import Source from "./source";
 import Config from "../../Config.json";
 import SystemError from "./errors";
-import { Window } from "src/types";
-
-type OpenOptions = {
-  [key: string]: any;
-};
+import { ActionOptions, Window, WindowStatus } from "src/types";
 
 function getDefaultRect(windows: Window[], name: string) {
   const width = window.innerWidth;
-  const height = window.innerHeight;
+  // const height = window.innerHeight;
   return {
     top: 32,
-    height: height - 32 - 96,
+    bottom: 96,
     left: width * 0.2,
-    width: width * 0.6,
+    right: width * 0.2,
   };
 }
 
-export function openWindow(projectName: string, options?: OpenOptions) {
+export function openWindow(projectName: string, options?: ActionOptions) {
   console.log("open window");
   const project = Config.projects.find((proj) => proj.name === projectName);
   if (!project) return;
@@ -31,8 +27,9 @@ export function openWindow(projectName: string, options?: OpenOptions) {
     data.activeProjects.add(projectName);
   }
   const rect = getDefaultRect(data.activeWindows, projectName);
+  const key = crypto.getRandomValues(new Uint32Array(1))[0];
   data.activeWindows.push({
-    key: crypto.getRandomValues(new Uint32Array(1))[0],
+    key,
     name: projectName,
     project: projectName,
     type: project.type,
@@ -42,9 +39,11 @@ export function openWindow(projectName: string, options?: OpenOptions) {
   });
 
   Source.emit(data);
+
+  return key;
 }
 
-export function openProject(name: string, options?: OpenOptions) {
+export function openProject(name: string, options?: ActionOptions) {
   console.log("open project");
   const project = Config.projects.find((proj) => proj.name === name);
   if (!project) return;
@@ -76,24 +75,37 @@ export function closeProject() {}
 
 export function goFullScreen(windowKey: number) {}
 
-function changeStatus(windowKey: number, status: "normal" | "minimize" | "maximize") {
+function changeStatus(
+  windowKey: number,
+  status: Exclude<WindowStatus, "full-screen">
+) {
   const data = Source.last();
   const index = data.activeWindows.findIndex((win) => win.key === windowKey);
   if (index === -1) {
     throw new SystemError("unk-ress");
   }
-  data.activeWindows[index].status = status
+  data.activeWindows[index].status = status;
 
+  switch (status) {
+    case "maximize":
+      data.activeWindows.push(...data.activeWindows.splice(index, 1));
+      break;
+    case "minimize":
+      data.activeWindows.unshift(...data.activeWindows.splice(index, 1));
+      break;
+    default:
+      break;
+  }
   Source.emit(data);
 }
 export function minimize(windowKey: number) {
-  return changeStatus(windowKey, "minimize")
+  return changeStatus(windowKey, "minimize");
 }
 export function maximise(windowKey: number) {
-  return changeStatus(windowKey, "maximize")
+  return changeStatus(windowKey, "maximize");
 }
 export function normalSize(windowKey: number) {
-  return changeStatus(windowKey, "normal")
+  return changeStatus(windowKey, "normal");
 }
 
 export function changeBackground(to: string) {
@@ -105,4 +117,37 @@ export function changeBackground(to: string) {
   } else {
     throw new SystemError("unk-ress");
   }
+}
+
+export function parseAction(
+  actionString: string,
+  options?: ActionOptions | Array<ActionOptions | null>
+) {
+  if (!actionString.length) return;
+  const actions = actionString.split(";");
+  return actions.map((action, index) => {
+    const [func, project] = action.split(":");
+    const opt = options instanceof Array ? options[index] : options;
+    switch (func) {
+      case "open":
+        return openProject(project, opt || {});
+      default:
+        return null;
+    }
+  });
+}
+
+export function updateWindow(
+  windowKey: number,
+  options: { [key: string]: any }
+) {
+  const data = Source.last();
+  const index = data.activeWindows.findIndex((win) => win.key === windowKey);
+  if (index === -1) {
+    throw new SystemError("unk-ress");
+  }
+  for (const opt in options) {
+    data.activeWindows[index][opt] = options[opt];
+  }
+  Source.emit(data);
 }

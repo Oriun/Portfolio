@@ -1,0 +1,14 @@
+.desktop{
+    position: fixed;
+    top: 28px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    display: grid;
+    // grid-auto-rows: var(--shortcut-size, 104px);
+    // grid-auto-columns: var(--shortcut-size, 80px);
+    grid-template-columns: repeat(auto-fill, var(--shortcut-width, 80px));
+    grid-template-rows: repeat(auto-fill, var(--shortcut-height, 104px));
+    padding: 40px 58px;
+    gap: 24px 32px;
+}

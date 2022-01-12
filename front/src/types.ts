@@ -1,9 +1,13 @@
+export type CSSValue = number | string;
+
 export type Rect = {
-  left: number | string;
-  top: number | string;
-  width: number | string;
-  height: number | string;
+  left: CSSValue;
+  top: CSSValue;
+  bottom: CSSValue;
+  right: CSSValue;
 };
+
+export type WindowStatus = "normal" | "minimize" | "full-screen" | "maximize";
 
 export type Window = {
   key: number;
@@ -11,5 +15,8 @@ export type Window = {
   project: string;
   type: string;
   rect: Rect;
-  status: "normal" | "minimize" | "full-screen" | "maximize";
+  status: WindowStatus;
+  [key:string]: any;
 };
+
+export type ActionOptions = null | { [key: string]: any };

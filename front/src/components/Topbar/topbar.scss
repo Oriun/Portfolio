@@ -12,6 +12,7 @@
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   user-select: none;
   font-family: var(--sf);
+  z-index: 1;
   &,
   nav,
   header {
@@ -23,7 +24,7 @@
     display: flex;
     align-items: center;
     .logo {
-      margin: 0 4px 0 16px;
+      margin: 0 4px 0 28px;
       width: 16px;
       height: 16px;
       border-radius: 50%;
