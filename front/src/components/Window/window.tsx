@@ -52,29 +52,47 @@ const Window = ({
       actualRect = rect;
       break;
   }
+  const size = {
+    width:
+      window.innerWidth -
+      (actualRect.left as number) -
+      (actualRect.right as number),
+    height:
+      window.innerHeight -
+      (actualRect.top as number) -
+      (actualRect.bottom as number),
+  };
   return (
     <Resizable
       tag="article"
-      className={"window " + className}
+      // className={"window " + className}
       style={{ ...actualRect }}
     >
-      {Head !== false && <div
-        className={"window-head" + (status === "full-screen" ? " mobile" : "")}
-        onDoubleClick={() => System[status === "normal" ? "maximise" : "normalSize"](winKey)}
-      >
-        <div className="window-button" onClick={$}>
-          <div onClick={() => System.closeWindow(winKey)} />
-          <div onClick={() => System.minimize(winKey)} />
-          <div onClick={() => System.goFullScreen(winKey)} />
-        </div>
-        <div className="window-head-main" onClick={$}>
-          {Head}
-        </div>
-        <div className="window-action" onClick={$}>
-          {Actions}
-        </div>
-      </div>}
-      {Content || children || <DefaultContent />}
+      <div className={"window " + className} style={{ ...size }}>
+        {Head !== false && (
+          <div
+            className={
+              "window-head" + (status === "full-screen" ? " mobile" : "")
+            }
+            onDoubleClick={() =>
+              System[status === "normal" ? "maximise" : "normalSize"](winKey)
+            }
+          >
+            <div className="window-button" onClick={$}>
+              <div onClick={() => System.closeWindow(winKey)} />
+              <div onClick={() => System.minimize(winKey)} />
+              <div onClick={() => System.goFullScreen(winKey)} />
+            </div>
+            <div className="window-head-main" onClick={$}>
+              {Head}
+            </div>
+            <div className="window-action" onClick={$}>
+              {Actions}
+            </div>
+          </div>
+        )}
+        {Content || children || <DefaultContent />}
+      </div>
     </Resizable>
   );
 };

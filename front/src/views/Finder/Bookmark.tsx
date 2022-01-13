@@ -11,10 +11,10 @@ type BookmarkProps = {
 const Bookmark = ({ name, path, icone, cd }: BookmarkProps) => {
     const Icon = useIcones(icone)
   return (
-    <div className="bookmark" onClick={() => cd(path)}>
+    <button className="bookmark" onClick={() => cd(path)}>
       <Icon color={Config.ui.color.blue} />
       <span>{name}</span>
-    </div>
+    </button>
   );
 };
 

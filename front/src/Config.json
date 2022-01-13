@@ -133,21 +133,46 @@
         }
     ],
     "finder": {
-        "bookmarks": [
+        "bookmarkGroup": [
             {
-                "name": "Compétences",
-                "path": "/c/Emmanuel_Nuiro/skills",
-                "icone": "icone:bi/BiCodeAlt"
+                "name": "Favoris",
+                "bookmarks": [
+                    {
+                        "name": "Compétences",
+                        "path": "/c/Emmanuel_Nuiro/skills",
+                        "icone": "icone:bi/BiCodeAlt"
+                    },
+                    {
+                        "name": "Formations",
+                        "path": "/c/Emmanuel_Nuiro/studies",
+                        "icone": "icone:io5/IoSchool"
+                    },
+                    {
+                        "name": "Expériences",
+                        "path": "/c/Emmanuel_Nuiro/experiences",
+                        "icone": "icone:md/MdWork"
+                    }
+                ]
             },
             {
-                "name": "Formations",
-                "path": "/c/Emmanuel_Nuiro/studies",
-                "icone": ""
-            },
-            {
-                "name": "Expériences",
-                "path": "/c/Emmanuel_Nuiro/experiences",
-                "icone": ""
+                "name": "Web",
+                "bookmarks":[
+                    {
+                        "name": "Decrypt.io",
+                        "path": "/c/Emmanuel_Nuiro/projects/Decrypt.io",
+                        "icone": "icone:bs/BsHexagonFill"
+                    },
+                    {
+                        "name": "Khnoum",
+                        "path": "/c/Emmanuel_Nuiro/projects/Khnoum",
+                        "icone": "icone:im/ImBook"
+                    },
+                    {
+                        "name": "What'sHack",
+                        "path": "/c/Emmanuel_Nuiro/projects/What-sHack",
+                        "icone": "icone:bs/BsFillChatDotsFill"
+                    }
+                ]
             }
         ]
     }

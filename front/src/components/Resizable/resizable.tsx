@@ -6,7 +6,7 @@ type ResizableProps = {
   className?: string;
   id?: string;
   ref?: string;
-  children: React.ReactNode[];
+  children: React.ReactNode | React.ReactNode[];
   [key: string]: any;
 };
 const Resizable = (prop: ResizableProps): JSX.Element => {
@@ -19,14 +19,14 @@ const Resizable = (prop: ResizableProps): JSX.Element => {
         tag: undefined,
         children: undefined,
       },
-      ...c
+      c
     );
   };
   return wrap(
     <div className="resizable-border" />,
     <div className="resizable-border" />,
     <div className="resizable-border" />,
-    ...prop.children
+    prop.children
   );
 };
 

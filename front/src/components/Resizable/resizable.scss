@@ -3,6 +3,8 @@
     transition-property: top, left, bottom, right;
     transition-duration: var(--window-transition-duration,.4s);
     transition-timing-function: linear;
+    position: fixed;
+    z-index: 2;
     .resizable-border{
         position: absolute;
         background: none;
