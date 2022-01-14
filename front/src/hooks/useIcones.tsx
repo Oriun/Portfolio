@@ -45,8 +45,6 @@ const ReactIcons = {
   wi,
 };
 
-console.log(ReactIcons);
-
 export const useIcones = (url: string): React.FC<any> => {
   return React.useMemo(() => {
     if (url.startsWith("icone:")) {

@@ -27,10 +27,10 @@ const Finder = ({ rect, winKey, project, status, path }: FinderProps) => {
       status={status}
       Content={
         <>
+          <LeftBar winKey={winKey} cd={cd} />
           <div className="finder-main">
             This is a Finder Window from path {path || "no path"}
           </div>
-          <LeftBar winKey={winKey} cd={cd}/>
         </>
       }
     />

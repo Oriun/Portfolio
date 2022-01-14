@@ -6,7 +6,7 @@ type ResizableProps = {
   className?: string;
   id?: string;
   ref?: string;
-  children: React.ReactNode | React.ReactNode[];
+  children: React.ReactElement;
   [key: string]: any;
 };
 const Resizable = (prop: ResizableProps): JSX.Element => {
@@ -23,10 +23,10 @@ const Resizable = (prop: ResizableProps): JSX.Element => {
     );
   };
   return wrap(
-    <div className="resizable-border" />,
-    <div className="resizable-border" />,
-    <div className="resizable-border" />,
-    prop.children
+    <div className="resizable-border" key={1} />,
+    <div className="resizable-border" key={2} />,
+    <div className="resizable-border" key={3} />,
+    React.cloneElement(prop.children, { key: 4 })
   );
 };
 

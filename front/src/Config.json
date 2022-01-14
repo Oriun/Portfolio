@@ -156,7 +156,7 @@
             },
             {
                 "name": "Web",
-                "bookmarks":[
+                "bookmarks": [
                     {
                         "name": "Decrypt.io",
                         "path": "/c/Emmanuel_Nuiro/projects/Decrypt.io",
@@ -171,6 +171,41 @@
                         "name": "What'sHack",
                         "path": "/c/Emmanuel_Nuiro/projects/What-sHack",
                         "icone": "icone:bs/BsFillChatDotsFill"
+                    }
+                ]
+            },
+            {
+                "name": "Challenges",
+                "bookmarks": [
+                    {
+                        "name": "Leetcode",
+                        "path": "/c/Emmanuel_Nuiro/challenges/leetcode",
+                        "icone": "icone:si/SiLeetcode"
+                    },
+                    {
+                        "name": "FrontendMentor",
+                        "path": "/c/Emmanuel_Nuiro/challenges/frontend-mentor",
+                        "icone": "icone:si/SiFrontendmentor"
+                    }
+                ]
+            },
+            {
+                "name": "Open Source",
+                "bookmarks": [
+                    {
+                        "name": "Hookster",
+                        "path": "/c/Emmanuel_Nuiro/open/hookster",
+                        "icone": "icone:si/SiReact"
+                    },
+                    {
+                        "name": "Xmen",
+                        "path": "/c/Emmanuel_Nuiro/open/x-men",
+                        "icone": "icone:bs/BsFileEarmarkCode"
+                    },
+                    {
+                        "name": "Blast",
+                        "path": "/c/Emmanuel_Nuiro/open/blast",
+                        "icone": "icone:md/MdDesignServices"
                     }
                 ]
             }
