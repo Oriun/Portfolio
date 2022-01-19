@@ -19,4 +19,10 @@ function useSystem<T = any>(map: mappingFunction<T>): T {
   return mapped;
 }
 
-export default useSystem
+export function useIsFront(windowKey: number): boolean {
+  return useSystem<boolean>(
+    (system) => system.activeWindows.at(-1)?.key === windowKey
+  );
+}
+
+export default useSystem;

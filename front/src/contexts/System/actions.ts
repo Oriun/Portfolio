@@ -44,12 +44,16 @@ export function openWindow(projectName: string, options?: ActionOptions) {
 }
 
 export function openProject(name: string, options?: ActionOptions) {
-  console.log("open project");
   const project = Config.projects.find((proj) => proj.name === name);
   if (!project) return;
-  const { activeProjects } = Source.last();
-  if (!project.multipleWindows && activeProjects.has(name)) {
-    throw new SystemError("alr-opn");
+  const { activeProjects, activeWindows } = Source.last();
+  if (activeProjects.has(name)) {
+    if (!project.multipleWindows) {
+      throw new SystemError("alr-opn");
+    } else {
+      console.log(activeWindows.filter(win=>win.project === name).at(-1)!.key)
+      return sendWinfowToFront(activeWindows.filter(win=>win.project === name).at(-1)!.key)
+    }
   }
   return openWindow(name, options);
 }
@@ -85,17 +89,6 @@ function changeStatus(
     throw new SystemError("unk-ress");
   }
   data.activeWindows[index].status = status;
-
-  switch (status) {
-    case "maximize":
-      data.activeWindows.push(...data.activeWindows.splice(index, 1));
-      break;
-    case "minimize":
-      data.activeWindows.unshift(...data.activeWindows.splice(index, 1));
-      break;
-    default:
-      break;
-  }
   Source.emit(data);
 }
 export function minimize(windowKey: number) {
@@ -150,4 +143,19 @@ export function updateWindow(
     data.activeWindows[index][opt] = options[opt];
   }
   Source.emit(data);
+}
+
+export function sendWinfowToFront(windowKey: number) {
+  const data = Source.last();
+  const index = data.activeWindows.findIndex((win) => win.key === windowKey);
+  if (index === -1) {
+    throw new SystemError("unk-ress");
+  }
+  if (index !== data.activeWindows.length - 1) {
+    data.activeWindows.push(data.activeWindows.splice(index, 1)[0]);
+    Source.emit(data);
+  }
+  if(data.activeWindows[index].status === "minimize"){
+    normalSize(windowKey)
+  }
 }

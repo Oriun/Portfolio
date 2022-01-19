@@ -48,6 +48,9 @@ const Window = ({
         right: 0.1,
       };
       break;
+    case "minimize":
+      console.log('min')
+      return <></>
     default:
       actualRect = rect;
       break;

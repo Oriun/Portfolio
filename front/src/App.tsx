@@ -12,10 +12,10 @@ import Desktop from "./components/Desktop";
 import Browser from "./views/Browser";
 import Finder from "./views/Finder";
 
-const typeToCompoent : { [key:string] : (props:any)=>JSX.Element } = {
-  "browser": Browser,
-  "finder": Finder
-}
+const typeToCompoent: { [key: string]: (props: any) => JSX.Element } = {
+  browser: Browser,
+  finder: Finder,
+};
 
 const App = (): JSX.Element => {
   const { windows, background } = System.useSystem((data) => ({
@@ -24,17 +24,14 @@ const App = (): JSX.Element => {
   }));
   console.log(windows, background);
   const WindowStack = React.useMemo(() => {
-    return windows.map(win => {
-      const Component = (win.type in typeToCompoent) ? typeToCompoent[win.type] : Window
-      return <Component
-        Head={win.name}
-        winKey={win.key}
-        {...win}
-      />
+    return windows.map((win) => {
+      const Component =
+        win.type in typeToCompoent ? typeToCompoent[win.type] : Window;
+      return <Component Head={win.name} winKey={win.key} {...win} />;
     });
   }, [windows]);
   return (
-    <main style={{ backgroundImage: `url("${background}")` }}>
+    <main style={{ backgroundImage: `url("${background}")` }} >
       <Topbar />
       <Desktop />
       {WindowStack}

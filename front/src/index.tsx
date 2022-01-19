@@ -17,6 +17,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+const keyLog = (e: KeyboardEvent) => {
+  const target = e.target as HTMLElement;
+  if (target.tagName === "INPUT") return true;
+  console.log(e.key,e.altKey, e.code, e.ctrlKey, e.shiftKey)
+  return false;
+};
+
+window.addEventListener('keydown',keyLog)
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
