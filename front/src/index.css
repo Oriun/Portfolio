@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --sf: "Roboto", sans-serif;
-  --window-transition-duration: .4s;
+  --window-transition-duration: .1s;
   --blue: #0070c9;
 }
 

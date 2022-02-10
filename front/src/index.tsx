@@ -19,9 +19,10 @@ ReactDOM.render(
 
 const keyLog = (e: KeyboardEvent) => {
   const target = e.target as HTMLElement;
-  if (target.tagName === "INPUT") return true;
+  if (target.tagName === "INPUT") return
+  if(e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) return
+  e.preventDefault()
   console.log(e.key,e.altKey, e.code, e.ctrlKey, e.shiftKey)
-  return false;
 };
 
 window.addEventListener('keydown',keyLog)

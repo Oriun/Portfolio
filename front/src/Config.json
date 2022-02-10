@@ -53,12 +53,12 @@
             "options": null
         },
         {
-            "name": "Gantt",
+            "name": "The foraigner",
             "icone": "",
             "background": "white",
             "action": "open:Safari",
             "options": {
-                "url": "https://gantt.nuiro.me"
+                "url": "https://foraigner.com"
             }
         },
         {
@@ -130,6 +130,42 @@
             "options": {
                 "path": "/c/Emmanuel_Nuiro/skills"
             }
+        },
+        {
+            "pos": {
+                "x": -2,
+                "y": 2
+            },
+            "image": "/img/folders/school.png",
+            "name": "Formation",
+            "action": "open:Finder",
+            "options": {
+                "path": "/c/Emmanuel_Nuiro/studies"
+            }
+        },
+        {
+            "pos": {
+                "x": -2,
+                "y": 3
+            },
+            "image": "/img/apps/time-machine.png",
+            "name": "Experiences",
+            "action": "open:Finder",
+            "options": {
+                "path": "/c/Emmanuel_Nuiro/experiences"
+            }
+        },
+        {
+            "pos": {
+                "x": -3,
+                "y": 1
+            },
+            "image": "/img/folders/stars.png",
+            "name": "My Work ⭐",
+            "action": "open:Finder",
+            "options": {
+                "path": "work://"
+            }
         }
     ],
     "finder": {
@@ -159,18 +195,23 @@
                 "bookmarks": [
                     {
                         "name": "Decrypt.io",
-                        "path": "/c/Emmanuel_Nuiro/projects/Decrypt.io",
+                        "path": "work://Decrypt.io",
                         "icone": "icone:bs/BsHexagonFill"
                     },
                     {
                         "name": "Khnoum",
-                        "path": "/c/Emmanuel_Nuiro/projects/Khnoum",
+                        "path": "work://Khnoum",
                         "icone": "icone:im/ImBook"
                     },
                     {
                         "name": "What'sHack",
-                        "path": "/c/Emmanuel_Nuiro/projects/What-sHack",
+                        "path": "work://What-sHack",
                         "icone": "icone:bs/BsFillChatDotsFill"
+                    },
+                    {
+                        "name": "The foraigner",
+                        "path": "work://the-foraigner",
+                        "icone": "icone:io/IoLanguage"
                     }
                 ]
             },
@@ -179,12 +220,12 @@
                 "bookmarks": [
                     {
                         "name": "Leetcode",
-                        "path": "/c/Emmanuel_Nuiro/challenges/leetcode",
+                        "path": "github://leetcode-problems",
                         "icone": "icone:si/SiLeetcode"
                     },
                     {
                         "name": "FrontendMentor",
-                        "path": "/c/Emmanuel_Nuiro/challenges/frontend-mentor",
+                        "path": "github://frontend-mentor",
                         "icone": "icone:si/SiFrontendmentor"
                     }
                 ]
@@ -194,21 +235,48 @@
                 "bookmarks": [
                     {
                         "name": "Hookster",
-                        "path": "/c/Emmanuel_Nuiro/open/hookster",
+                        "path": "github://hookster",
                         "icone": "icone:si/SiReact"
                     },
                     {
                         "name": "Xmen",
-                        "path": "/c/Emmanuel_Nuiro/open/x-men",
+                        "path": "github://x-men",
                         "icone": "icone:bs/BsFileEarmarkCode"
                     },
                     {
                         "name": "Blast",
-                        "path": "/c/Emmanuel_Nuiro/open/blast",
+                        "path": "github://blast",
                         "icone": "icone:md/MdDesignServices"
                     }
                 ]
             }
-        ]
+        ],
+        "disks": {
+            "c": [
+                {
+                    "name": "Emmanuel_Nuiro",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "studies",
+                            "type": "folder",
+                            "children": []
+                        },
+                        {
+                            "name": "experiences",
+                            "type": "folder",
+                            "children": []
+                        },
+                        {
+                            "name": "skills",
+                            "type": "folder",
+                            "children": []
+                        }
+                    ]
+                }
+            ],
+            "work": [],
+            "github": []
+        }
     }
 }

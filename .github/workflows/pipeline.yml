@@ -16,17 +16,18 @@ jobs:
         run: echo -e "${{ secrets.ENV }}" > .env
       - name: Build Images
         run: docker-compose build
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Add .env
-        run: echo -e "${{ secrets.ENV }}" > .env
-      - name: Run tests
-        run: docker-compose run --rm front yarn test
+  # test:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Add .env
+  #       run: echo -e "${{ secrets.ENV }}" > .env
+  #     - name: Run tests
+  #       run: docker-compose run --rm front yarn test
   deploy:
-    needs: test
+    # needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

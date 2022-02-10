@@ -1,7 +1,7 @@
 import Source from "./source";
 import Config from "../../Config.json";
 import SystemError from "./errors";
-import { ActionOptions, Window, WindowStatus } from "src/types";
+import { ActionOptions, Rect, Window, WindowStatus } from "src/types";
 
 function getDefaultRect(windows: Window[], name: string) {
   const width = window.innerWidth;
@@ -49,10 +49,10 @@ export function openProject(name: string, options?: ActionOptions) {
   const { activeProjects, activeWindows } = Source.last();
   if (activeProjects.has(name)) {
     if (!project.multipleWindows) {
-      throw new SystemError("alr-opn");
-    } else {
-      console.log(activeWindows.filter(win=>win.project === name).at(-1)!.key)
-      return sendWinfowToFront(activeWindows.filter(win=>win.project === name).at(-1)!.key)
+      // throw new SystemError("alr-opn");
+      return sendWinfowToFront(
+        activeWindows.filter((win) => win.project === name).at(-1)!.key
+      );
     }
   }
   return openWindow(name, options);
@@ -130,10 +130,7 @@ export function parseAction(
   });
 }
 
-export function updateWindow(
-  windowKey: number,
-  options: { [key: string]: any }
-) {
+export function updateWindow(windowKey: number, options: Partial<Window>) {
   const data = Source.last();
   const index = data.activeWindows.findIndex((win) => win.key === windowKey);
   if (index === -1) {
@@ -143,6 +140,10 @@ export function updateWindow(
     data.activeWindows[index][opt] = options[opt];
   }
   Source.emit(data);
+}
+
+export function resizeWindow(windowKey: number, newRect: Rect) {
+  updateWindow(windowKey, { rect: newRect });
 }
 
 export function sendWinfowToFront(windowKey: number) {
@@ -155,7 +156,7 @@ export function sendWinfowToFront(windowKey: number) {
     data.activeWindows.push(data.activeWindows.splice(index, 1)[0]);
     Source.emit(data);
   }
-  if(data.activeWindows[index].status === "minimize"){
-    normalSize(windowKey)
+  if (data.activeWindows[index].status === "minimize") {
+    normalSize(windowKey);
   }
 }

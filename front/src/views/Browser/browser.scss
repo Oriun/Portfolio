@@ -6,6 +6,7 @@
         grid-template-columns: 33px 1fr 33px;
         column-gap: 9px;
         align-items: center;
+        user-select: none;
         > * {
             height: 28px;
         }
@@ -25,6 +26,7 @@
             font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.004em;
+            user-select: contain;
 
             color: #4c4c4c;
             > svg {

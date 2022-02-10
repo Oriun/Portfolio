@@ -3,6 +3,8 @@ import Resizable from "../Resizable";
 import "./window.scss";
 import { Rect, WindowStatus } from "src/types";
 import System from "src/contexts/System";
+import { resizeWindow, sendWinfowToFront } from "src/contexts/System/actions";
+import { useIsFront } from "src/contexts/System/hook";
 
 type WindowProps = {
   Head?: React.ReactNode | false;
@@ -15,6 +17,9 @@ type WindowProps = {
   status: WindowStatus;
   [key: string]: any;
 };
+type WindowRefs = {
+  head: React.RefObject<HTMLDivElement>;
+};
 
 const DefaultContent = (): JSX.Element => {
   return (
@@ -26,18 +31,32 @@ const DefaultContent = (): JSX.Element => {
 
 const $ = (e: React.MouseEvent) => e.stopPropagation();
 
-const Window = ({
-  Head = "New Window",
-  Content,
-  Actions,
-  rect,
-  winKey,
-  children,
-  className = " ",
-  status,
-}: WindowProps) => {
-  console.log("status", winKey, status);
-  let actualRect;
+const Window = (
+  {
+    Head = "New Window",
+    Content,
+    Actions,
+    rect,
+    winKey,
+    children,
+    className = " ",
+    status,
+  }: WindowProps,
+  ref: React.ForwardedRef<WindowRefs | null>
+) => {
+  
+  const isFront = useIsFront(winKey)
+  console.log("status", winKey, status, isFront);
+  const headRef = React.useRef<HTMLDivElement>(null);
+
+  React.useImperativeHandle(ref, () => ({
+    get head() {
+      return headRef;
+    },
+  }));
+
+  let actualRect: Rect;
+  let activated = false;
   switch (status) {
     case "full-screen":
     case "maximize":
@@ -49,10 +68,11 @@ const Window = ({
       };
       break;
     case "minimize":
-      console.log('min')
-      return <></>
+      console.log("min");
+      return <></>;
     default:
       actualRect = rect;
+      activated = true;
       break;
   }
   const size = {
@@ -69,7 +89,10 @@ const Window = ({
     <Resizable
       tag="article"
       // className={"window " + className}
-      style={{ ...actualRect }}
+      activated={activated}
+      rect={actualRect}
+      onResize={(r: Rect) => resizeWindow(winKey, r)}
+      onMouseDown={isFront ? undefined : ()=>sendWinfowToFront(winKey)}
     >
       <div className={"window " + className} style={{ ...size }}>
         {Head !== false && (
@@ -80,6 +103,7 @@ const Window = ({
             onDoubleClick={() =>
               System[status === "normal" ? "maximise" : "normalSize"](winKey)
             }
+            ref={headRef}
           >
             <div className="window-button" onClick={$}>
               <div onClick={() => System.closeWindow(winKey)} />
@@ -100,4 +124,4 @@ const Window = ({
   );
 };
 
-export default Window;
+export default React.forwardRef<any, WindowProps>(Window);

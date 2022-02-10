@@ -1,6 +1,6 @@
 # Portfolio
 
-## Development
+## Development (optional)
 
 ```shell
 # Install packages
