@@ -12,20 +12,38 @@ type DesktopItemProps = {
   name: string;
   action: string;
   options: ActionOptions | ActionOptions[];
+  moveItem: (vec: { x: number; y: number }) => void;
 };
 
-const DesktopItem = ({ pos, image, name, action, options }: DesktopItemProps): JSX.Element => {
-  const doAction = useAction(action, options)
+const size = {
+  width: 80,
+  height: 140
+}
+
+const DesktopItem = ({
+  pos,
+  image,
+  name,
+  action,
+  options,
+  moveItem,
+}: DesktopItemProps): JSX.Element => {
+  const doAction = useAction(action, options);
   return (
     <div
       className="desktop-item"
       style={{
         gridRow: `${pos.y}/${pos.y + 1}`,
         gridColumn: `${pos.x}/${pos.x + 1}`,
+        backgroundImage: `url('${image}')`
       }}
       onDoubleClick={doAction}
+      onMouseDown={()=>{
+        window.addEventListener('mouseup', function (event:MouseEvent){
+          console.log('event', event.clientX, event.clientY)
+        })
+      }}
     >
-      <img src={image} alt="" />
       <h6>{name}</h6>
     </div>
   );

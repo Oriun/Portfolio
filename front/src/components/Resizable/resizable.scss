@@ -1,7 +1,7 @@
 .resizable{
     position: absolute;
     transition-property: top, left, bottom, right;
-    transition-duration: var(--window-transition-duration,.4s);
+    transition-duration: var(--window-transition-duration,.01s);
     transition-timing-function: linear;
     position: fixed;
     z-index: 2;

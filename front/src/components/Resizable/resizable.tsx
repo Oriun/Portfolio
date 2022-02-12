@@ -51,7 +51,7 @@ const Resizable: React.FC<ResizableProps> = ({
           default:
             break;
         }
-      }, 100);
+      }, 30);
       function reset() {
         onResize(size);
         setBorderRef(null);

@@ -28,11 +28,11 @@
         },
         {
             "name": "Decrypt.io",
-            "icone": "http://decrypt-io.com/apple-touch-icon.png",
+            "icone": "https://decrypt-io.com/apple-touch-icon.png",
             "background": "white",
             "action": "open:Safari",
             "options": {
-                "url": "http://decrypt-io.com"
+                "url": "https://decrypt-io.com"
             }
         },
         {
@@ -211,7 +211,7 @@
                     {
                         "name": "The foraigner",
                         "path": "work://the-foraigner",
-                        "icone": "icone:io/IoLanguage"
+                        "icone": "icone:io5/IoLanguage"
                     }
                 ]
             },
