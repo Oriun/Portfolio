@@ -34,8 +34,7 @@ const DesktopItem = ({
       className="desktop-item"
       style={{
         gridRow: `${pos.y}/${pos.y + 1}`,
-        gridColumn: `${pos.x}/${pos.x + 1}`,
-        backgroundImage: `url('${image}')`
+        gridColumn: `${pos.x}/${pos.x + 1}`
       }}
       onDoubleClick={doAction}
       onMouseDown={()=>{
@@ -44,6 +43,7 @@ const DesktopItem = ({
         })
       }}
     >
+      <div style={{ backgroundImage: `url('${image}')` }}/>
       <h6>{name}</h6>
     </div>
   );
