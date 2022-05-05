@@ -48,12 +48,12 @@ export function openProject(name: string, options?: ActionOptions) {
   if (!project) return;
   const { activeProjects, activeWindows } = Source.last();
   if (activeProjects.has(name)) {
-    if (!project.multipleWindows) {
+    // if (!project.multipleWindows) {
       // throw new SystemError("alr-opn");
       return sendWinfowToFront(
         activeWindows.filter((win) => win.project === name).at(-1)!.key
       );
-    }
+    // }
   }
   return openWindow(name, options);
 }

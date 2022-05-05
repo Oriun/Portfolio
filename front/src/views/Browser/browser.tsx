@@ -16,6 +16,52 @@ function translate(vector: { x: number; y: number }, rect: Rect) {
   };
 }
 
+type SearchBarProps = {
+  uri: string;
+  goTo: (newUrl: string) => void;
+};
+
+type SearchbarFormEvent = React.FormEvent<HTMLFormElement> & {
+  target: React.FormEvent<HTMLFormElement>["target"] & {
+    0: { value: string };
+  };
+};
+
+const SearchBar = ({ uri, goTo }: SearchBarProps) => {
+  const parsed = new URL(uri);
+  const [searchMode, setMode] = React.useState<boolean>(false);
+  function submit(e: SearchbarFormEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    const new_url = e.target[0].value;
+    goTo(new_url);
+  }
+  return (
+    <div
+      className="browser-head"
+      onClick={() => setMode((a) => !a)}
+      onDoubleClick={(e) => e.stopPropagation()}
+    >
+      {parsed.protocol === "https" ? <Shield /> : <div />}
+      {searchMode ? (
+        <form
+          className="browser-search-bar"
+          onSubmit={submit}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <input type="text" />
+          <Redo onClick={() => goTo(uri)} />
+        </form>
+      ) : (
+        <div className="browser-search-bar">
+          {parsed.hostname}
+          <Redo onClick={() => goTo(uri)} />
+        </div>
+      )}
+    </div>
+  );
+};
+
 type BrowserProps = {
   project: string;
   rect: Rect;
@@ -38,21 +84,16 @@ const Browser = ({
   React.useEffect(() => {
     // for (const p of Object.keys(size) as (keyof Rect)[]) {
     //   if (size[p] !== rect[p]) {
-        setSize(rect);
+    setSize(rect);
     //     break;
     //   }
     // }
   }, [rect]);
-  const parsedUrl = new URL(uri);
-  function reloadIframe() {
-    if (!ref.current) return;
-    // eslint-disable-next-line no-self-assign
-    ref.current.src = ref.current.src;
-  }
   const moveRef = useMove(
     (vec) => setSize(translate(vec, rect)),
     (vec) => resizeWindow(winKey, translate(vec, rect))
   );
+  
   return (
     <Window
       rect={size}
@@ -60,21 +101,13 @@ const Browser = ({
       key={winKey}
       className="browser"
       status={status}
-      Head={
-        <div className="browser-head">
-          {parsedUrl.protocol === "https" ? <Shield /> : <div />}
-          <div className="browser-search-bar">
-            {parsedUrl.hostname}
-            <Redo onClick={reloadIframe} />
-          </div>
-        </div>
-      }
+      Head={<SearchBar uri={uri} goTo={setUri} />}
       Content={
         <iframe
-          src={url}
+          src={uri}
           ref={ref}
           title={project}
-          key={winKey}
+          key={winKey+uri}
           allow="fullscreen"
           referrerPolicy="strict-origin-when-cross-origin"
         />
