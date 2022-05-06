@@ -1,296 +1,302 @@
 [
     {
-        "title": "comment se connecter à l'adresse IP 127.0.0.1 - Localhost - Ionos",
+        "title": "Offres d'emploi &#8220;107 Google Développeur Web Junior&#8221; - LinkedIn",
+        "data": "107 offres d'emploi Google Développeur Web Junior (France) (5 nouvelles offres) · Front-End Developer [Internship] · Développeur web [alternance] · Développeur Web.",
+        "url": "https://fr.linkedin.com/jobs/google-d%C3%A9veloppeur-web-junior-emplois?start=0&count=10&trk=jobs_jserp_pagination_1",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Google Developer - 29 avril 2022 | Indeed.com",
+        "data": "Vous êtes à la recherche d'un emploi : Google Developer ? Il y en a 517 disponibles sur ... Dashlane4,0 ... Alternance - Business Developer France.",
+        "url": "https://fr.indeed.com/Emplois-Google-Developer",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Full Stack Google - 4 mai 2022 | Indeed.com",
+        "data": "emplois Full Stack Google · Atos logo. nouveau. Consultant DevOps Full Stack H/F · STAGIAIRE DÉVELOPPEUR FULL STACK. TimeTonic O'Mailey · Full Stack Developer H/F.",
+        "url": "https://fr.indeed.com/Emplois-Full-Stack-Google",
+        "type": "simple"
+    },
+    {
+        "title": "Search Jobs - Google Careers",
+        "data": "Termes manquants :start=0",
+        "url": "https://careers.google.com/jobs/results/?hl=fr_FR",
+        "type": "with_rate"
+    },
+    {
+        "title": "Emplois chez Google, Paris | Glassdoor",
+        "data": "Les chercheurs d'emploi intéressés par Google ont également consulté. Précédent ... Sales and Marketing Apprenticeship, 2022 September Start. Paris+30 j.",
+        "url": "https://www.glassdoor.fr/Emplois/Google-Paris-Emplois-EI_IE9079.0,6_IL.7,12_IC2881970.htm",
+        "type": "simple"
+    },
+    {
+        "title": "Travailler chez Google : 11 faits et chiffres étonnants - HelloWorkplace",
+        "data": "Ses méthodes de management inspirent beaucoup de start-up et ... Si vous postulez chez Google vous avez 0,2% de chance d'être embauché.",
+        "url": "https://www.helloworkplace.fr/travailler-chez-google/",
+        "type": "simple"
+    },
+    {
+        "title": "Offres d'emploi et stage - Adsrank - Welcome to the Jungle",
+        "data": "Créée en 2019, AdsRank est une start-up dynamique à forte ... ...",
+        "url": "https://www.welcometothejungle.com/fr/companies/adsrank/jobs",
+        "type": "simple"
+    },
+    {
+        "title": "Google recrutement - Mai 2022 - Jobijoba",
         "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos.fr/digitalguide/serveur/know-how/localhost/",
+        "url": "https://www.jobijoba.com/fr/emploi/Google",
         "type": "with_rate"
     },
     {
-        "title": "Serveur Cloud : Utiliser Knoppix pour la récupération des données",
-        "data": "Chez IONOS, rendez-vous dans la section Serveurs et Cloud (si vous possédez ... commande suivante : : root@Microknoppix:/home/knoppix# /etc/init.d/ssh start.",
-        "url": "https://www.ionos.fr/assistance/serveurs-et-cloud/administration-serveur/serveur-cloud-utiliser-knoppix-pour-la-recuperation-des-donnees/",
+        "title": "Les meilleurs sites de recherche d'emploi [2022] | Fisio",
+        "data": "Vous êtes super dev mobile, master chef Python ou uber devops ? ... un stage, un job d'été, une alternance ou encore un premier emploi.",
+        "url": "https://fisio.fr/les-meilleurs-sites-de-recherche-demploi/",
         "type": "simple"
     },
     {
-        "title": "Serveurs Cloud à partir de 5 &#8364; par mois | IONOS by 1&amp;1",
-        "data": "0,5000 &#8364; HT/heure (0,6000 &#8364; TTC) max. 360 &#8364;/mois (432 &#8364; TTC). Configurer. Le taux de TVA peut être différent, dépendant de la localisation de l'opération ...",
-        "url": "https://www.ionos.fr/cloud/serveurs-cloud",
+        "title": "Offres emplois &amp; Missions dans la solidarité internationale",
+        "data": "Powered by Google Translate Translate. Espace presse · Connexion ... Stage ou Alternance (133). Activité bénévole (11) ... 0 0 Croix Rouge Française ...",
+        "url": "https://www.coordinationsud.org/espace-emploi/",
         "type": "simple"
     },
     {
-        "title": "Utiliser le Rescue System Linux (RAID Hardware) - IONOS Assistance",
-        "data": "I/O size (minimum/optimal): 512 bytes / 512 bytes. Disklabel type: gpt. Disk identifier: DCBF9911-237E-47D0-BA51-D3802287C521 Device Start End Sectors Size ...",
-        "url": "https://www.ionos.fr/assistance/serveurs-et-cloud/administration-serveur-serveur-dedie/utiliser-le-rescue-system-linux-raid-hardware/",
+        "title": "Offres d'emploi &#8220;107 Google Développeur Web Junior&#8221; - LinkedIn",
+        "data": "107 offres d'emploi Google Développeur Web Junior (France) (5 nouvelles offres) · Front-End Developer [Internship] · Développeur web [alternance] · Développeur Web.",
+        "url": "https://fr.linkedin.com/jobs/google-d%C3%A9veloppeur-web-junior-emplois?start=0&count=10&trk=jobs_jserp_pagination_1",
         "type": "simple"
     },
     {
-        "title": "IONOS by 1&amp;1 » Hosting Provider | Websites. Domains. Server.",
-        "data": "About IONOS·IONOS Cloud·IONOS App·IONOS Postmaster Service",
-        "url": "https://www.ionos.com/",
-        "type": "with_rate"
-    },
-    {
-        "title": "How to Correctly Use Stop, Start, Reset on ProfitBricks",
-        "data": "How to correctly stop, start, and reset a server at ProfitBricks - learn more at the IONOS DevOps Central Community.",
-        "url": "https://devops.ionos.com/tutorials/how-to-correctly-use-stop-start-reset-on-profitbricks.html",
+        "title": "Emplois : Stage Developpeur Google - 4 mai 2022 | Indeed.com",
+        "data": "[ALTERNANCE / STAGE] Développeur&#11825;euse Front-End Junior (VueJS). IDLABS STUDIO. Hybrid remote in Issy-les-Moulineaux (92) 92130.",
+        "url": "https://fr.indeed.com/m/jobs?q=Stage+Developpeur+Google",
         "type": "simple"
     },
     {
-        "title": "Newest 'ionos' Questions - Stack Overflow",
-        "data": "I am looking for a solution to upload files to my Ionos webspace. ... 0 votes. 0 answers. 41 views ... This works well on IIS-Express (starting .",
-        "url": "https://stackoverflow.com/questions/tagged/ionos",
+        "title": "Emplois : Full Stack Google - 4 mai 2022 | Indeed.com",
+        "data": "Full Stack Developer H/F ; Candidature mobile facile. Plusieurs postes à pourvoir ; EmployerEmployeur actif il y a 14 jours ...",
+        "url": "https://fr.indeed.com/Emplois-Full-Stack-Google",
         "type": "simple"
     },
     {
-        "title": "Les Avis experts et des utilisateurs de IONOS - 2022 - HostAdvice",
-        "data": "Hébergements partagés, 0,47 &#8364; - 7,59 &#8364; ; VPS, 1,90 &#8364; - 17,09 &#8364; ; Serveur Dédié, 37,97 &#8364; - 142,39 &#8364; ; Hébergements cloud, 3,80 &#8364; - 208,84 &#8364; ; Créateur de sites ...",
-        "url": "https://fr.hostadvice.com/hosting-company/ionos-reviews/",
-        "type": "with_rate"
-    },
-    {
-        "title": "1&amp;1 IONOS : le leader européen du Cloud et de l'hébergement web",
-        "data": "1&amp;1 IONOS est le leader européen de l'hébergement web, et propose également ... une discussion instantanée en cliquant sur « Start Chat ».",
-        "url": "https://www.lebigdata.fr/1and1-ionos-tout-savoir",
-        "type": "simple"
-    },
-    {
-        "title": "Ionos.fr Review: Prix, concurrents et score du site Web - Sitechecker",
-        "data": "0 /100. Critical Errors The most critical errors on a page that need to be fixed. ... Social signals of Ionos.fr ... WHOIS information about Ionos.fr ...",
-        "url": "https://sitechecker.pro/fr/web-hosting/ionos.fr/",
-        "type": "simple"
-    },
-    {
-        "title": "Démarrage automatique sous Windows 10 - Ionos",
-        "data": "Où se trouve le dossier de démarrage automatique de Windows 10 · C:\\Users\\BENUTZERNAME\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\ ...",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/demarrage-automatique-sous-windows-10/",
-        "type": "simple"
-    },
-    {
-        "title": "Startup Guide - IONOS",
-        "data": "Quand des rêves deviennent réalité : de certaines start-ups sont nées des entreprises qui pèsent des milliards. Si vous souhaitez aussi trouver une idée de ...",
-        "url": "https://www.ionos.fr/startupguide/",
-        "type": "simple"
-    },
-    {
-        "title": "Activer le démarrage de Windows 10 sans mot de passe - Ionos",
+        "title": "Search Jobs - Google Careers",
         "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/demarrer-windows-10-sans-mot-de-passe/",
+        "url": "https://careers.google.com/jobs/results/?hl=fr_FR",
         "type": "with_rate"
     },
     {
-        "title": "Serveur Cloud : Utiliser Knoppix pour la récupération des données",
-        "data": "Chez IONOS, rendez-vous dans la section Serveurs et Cloud (si vous possédez ... commande suivante : : root@Microknoppix:/home/knoppix# /etc/init.d/ssh start.",
-        "url": "https://www.ionos.fr/assistance/serveurs-et-cloud/administration-serveur/serveur-cloud-utiliser-knoppix-pour-la-recuperation-des-donnees/",
+        "title": "Google ADS Experts - Dimo - Alternance à Paris - Welcome to the ...",
+        "data": "Dimo recrute un(e) Google ADS Experts à Paris ! ... Dimo est ...",
+        "url": "https://www.welcometothejungle.com/fr/companies/dimo/jobs/google-ads-experts_paris",
         "type": "simple"
     },
     {
-        "title": "Commande CMD | Liste pratique de commandes Windows - IONOS",
-        "data": "Voici les commandes CMD les plus importantes sous Windows 10. Nous vous expliquons tout sur ... start, Ouvre une nouvelle fenêtre d'invite.",
-        "url": "https://www.ionos.fr/digitalguide/serveur/know-how/commande-cmd/",
+        "title": "Travailler chez Google : 11 faits et chiffres étonnants - HelloWorkplace",
+        "data": "Google est devenu l'employeur de référence dans le monde. ... Ses méthodes de management inspirent beaucoup de start-up et d'entreprises.",
+        "url": "https://www.helloworkplace.fr/travailler-chez-google/",
         "type": "simple"
     },
     {
-        "title": "Comment résoudre l'erreur 0x80070bc2 sous Windows 10 - IONOS",
-        "data": "SC config wuauserv start=auto SC config bits start=auto SC config ... Sous Windows 10, vous trouverez cet outil implémenté par défaut dans ...",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/resoudre-lerreur-0x80070bc2/",
+        "title": "Emplois chez Google, Paris | Glassdoor",
+        "data": "66 emplois chez Google, Paris. Découvrez les offres d'emploi et décidez de postuler ou non en consultant les salaires, les avis et bien d'autres ...",
+        "url": "https://www.glassdoor.fr/Emplois/Google-Paris-Emplois-EI_IE9079.0,6_IL.7,12_IC2881970.htm",
         "type": "simple"
     },
     {
-        "title": "Installer un stack LAMP sur un serveur cloud avec CentOS 8 - Ionos",
-        "data": "Installed size: 10 M Is this ok [y/d/N]:. Tapez [y] et appuyez sur [Entrée]. ... systemctl start httpd.service ... systemctl start mariadb.",
-        "url": "https://www.ionos.fr/assistance/serveurs-et-cloud/administration-serveur/installer-un-stack-lamp-sur-un-serveur-cloud-avec-centos-8/",
+        "title": "Humind School - La 1ère Ecole Sales &amp; Business Development ...",
+        "data": "Humind School est la 1ère Ecole Sales &amp; Business Development du Digital. En 9 ou 12 semaines intensives, deviens Business Developer grâce à nos Sales ...",
+        "url": "https://www.humindschool.com/",
         "type": "simple"
     },
     {
-        "title": "Comment démarrer le mode sans échec de Windows 10 ? - IONOS",
+        "title": "Les meilleurs sites de recherche d'emploi [2022] | Fisio",
+        "data": "Vous êtes super dev mobile, master chef Python ou uber devops ? ... un stage, un job d'été, une alternance ou encore un premier emploi.",
+        "url": "https://fisio.fr/les-meilleurs-sites-de-recherche-demploi/",
+        "type": "simple"
+    },
+    {
+        "title": "Google recrutement à Paris - Mai 2022 - Jobijoba",
+        "data": "Trouvez votre emploi chez Google à Paris parmi les 3140 offres proposées par Jobijoba &#10148; CDI, ... ISCOD: Alternance Assistant Consultant Sea - Paris (F/H).",
+        "url": "https://www.jobijoba.com/fr/emploi/Google/Paris",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Google Developer - 29 avril 2022 | Indeed.com",
+        "data": "Candidature mobile facile. Plusieurs postes à pourvoir ; EmployerEmployeur actif il y a 20 jours ...",
+        "url": "https://fr.indeed.com/Emplois-Google-Developer",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Full Stack Google - 4 mai 2022 | Indeed.com",
+        "data": "Vous êtes à la recherche d'un emploi : Full Stack Google ? ... Full Stack Developer H/F ... Développeur Full Stack H/F en alternance.",
+        "url": "https://fr.indeed.com/Emplois-Full-Stack-Google",
+        "type": "simple"
+    },
+    {
+        "title": "Offres d'emploi et stage - Adsrank - Welcome to the Jungle",
+        "data": "Créée en 2019, AdsRank est une start-up dynamique à forte ...",
+        "url": "https://www.welcometothejungle.com/fr/companies/adsrank/jobs",
+        "type": "simple"
+    },
+    {
+        "title": "Business Developer and Positive Impact Marketing - Alternance",
+        "data": "Business Developer et Marketing à impact positif - Alternance - Remote. Créée par un ex-Google, Ads for Change est une agence digitale ...",
+        "url": "https://jobs.makesense.org/en/jobs/ads-for-change-business-developer-et-marketing-a-impact-positif-alternance-remote-8IOFoWPD4cZO0CqGRLau",
+        "type": "simple"
+    },
+    {
+        "title": "BUSINESS DEVELOPER - La French Tech Aix Marseille - Région Sud",
+        "data": "Nous recherchons un(e) Business Developer/Growth Hacker en alternance pour ... des outils comme Lemlist, Hubspot, Google Analytics et le FacebookAds Manager",
+        "url": "https://lafrenchtech-aixmarseille.fr/petites%20annonces/11916/business-developer-2/general/",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois chez Google, Paris | Glassdoor",
+        "data": "Les chercheurs d'emploi intéressés par Google ont également consulté. Précédent ... Sales and Marketing Apprenticeship, 2022 September Start ... Paris20 j.",
+        "url": "https://www.glassdoor.fr/Emplois/Google-Paris-Emplois-EI_IE9079.0,6_IL.7,12_IC2881970.htm",
+        "type": "simple"
+    },
+    {
+        "title": "À 20 ans, Jérémie suit une formation en Marketing Digital chez Google",
+        "data": "Étudiant en graphisme à l'école Gobelins puis admis à l'École 42, il est Manager du Pôle Graphique de la start-up One4You et a suivi une formation en Marketing ...",
+        "url": "https://laruche.wizbii.com/jeremie-formation-marketing-digital-google",
+        "type": "simple"
+    },
+    {
+        "title": "9 000 offres d'emploi Google (France) (550 nouvelles offres) - LinkedIn",
+        "data": "Termes manquants :alternancedeveloper?20",
+        "url": "https://fr.linkedin.com/jobs/google-emplois",
+        "type": "with_rate"
+    },
+    {
+        "title": "Offres d'emplois - Cosmetic Valley - recrutement-formation",
+        "data": "2022-04-26, CDI, Senior Business Developer - Consulting en affaires ... 2022-04-20, Contrat en alternance, Alternance technicien de maintenance H/F/X ...",
+        "url": "https://www.cosmetic-valley.com/recrutement-formation/offres-d-emplois/",
+        "type": "simple"
+    },
+    {
+        "title": "Vosges. Épinal : Google vient à la rencontre des entreprises au Quai ...",
+        "data": "À l'initiative du Quai Alpha, les Digital Days se sont ouverts, destinés à permettre à des chefs d'entreprise, des représentants de start-up ...",
+        "url": "https://www.vosgesmatin.fr/economie/2021/09/20/epinal-google-vient-a-la-rencontre-des-entreprises-au-quai-alpha",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Google Developer - 29 avril 2022 | Indeed.com",
+        "data": "Marketing Internship ; Candidature mobile facile. Plusieurs postes à pourvoir ; EmployerEmployeur actif il y a 20 jours ...",
+        "url": "https://fr.indeed.com/Emplois-Google-Developer",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Full Stack Google - 4 mai 2022 | Indeed.com",
+        "data": "Vous êtes à la recherche d'un emploi : Full Stack Google ? ... 30 000 &#8364; - 45 000 &#8364; par an. Temps plein ... Développeur Full Stack H/F en alternance.",
+        "url": "https://fr.indeed.com/Emplois-Full-Stack-Google",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois chez Google, Paris | Glassdoor",
+        "data": "Software Engineering Apprenticeship, Engineering, September 2022 Start. Paris+30 j. Les chercheurs d'emploi intéressés par Google ont également consulté.",
+        "url": "https://www.glassdoor.fr/Emplois/Google-Paris-Emplois-EI_IE9079.0,6_IL.7,12_IC2881970.htm",
+        "type": "simple"
+    },
+    {
+        "title": "How we hire - Google Careers",
+        "data": "then start looking at some of the listings that match. As you're browsing, keep in mind that you can apply for up to three jobs every 30 days.",
+        "url": "https://careers.google.com/how-we-hire/",
+        "type": "simple"
+    },
+    {
+        "title": "Travailler chez Google : 11 faits et chiffres étonnants - HelloWorkplace",
+        "data": "Google est devenu l'employeur de référence dans le monde. ... Ses méthodes de management inspirent beaucoup de start-up et d'entreprises.",
+        "url": "https://www.helloworkplace.fr/travailler-chez-google/",
+        "type": "simple"
+    },
+    {
+        "title": "WIZBII - Les services utiles aux 16-30 ans",
+        "data": "Termes manquants :googledeveloper?start=",
+        "url": "https://www.wizbii.com/",
+        "type": "with_rate"
+    },
+    {
+        "title": "INFOTEL Alternance - Développement d'Api Google avec la Suite ...",
+        "data": "Termes manquants :start=30",
+        "url": "https://www.hellowork.com/fr-fr/emplois/19673189.html",
+        "type": "with_rate"
+    },
+    {
+        "title": "Google recrutement à Paris - Mai 2022 - Jobijoba",
+        "data": "Trouvez votre emploi chez Google à Paris parmi les 3140 offres proposées par Jobijoba &#10148; CDI, ... ISCOD: Alternance Assistant Consultant Sea - Paris (F/H).",
+        "url": "https://www.jobijoba.com/fr/emploi/Google/Paris",
+        "type": "simple"
+    },
+    {
+        "title": "Vosges. Épinal : Google vient à la rencontre des entreprises au Quai ...",
+        "data": "À l'initiative du Quai Alpha, les Digital Days se sont ouverts, destinés à permettre à des chefs d'entreprise, des représentants de start-up ...",
+        "url": "https://www.vosgesmatin.fr/economie/2021/09/20/epinal-google-vient-a-la-rencontre-des-entreprises-au-quai-alpha",
+        "type": "simple"
+    },
+    {
+        "title": "Offres d'emploi Nîmes - 30 | Apec",
+        "data": "POSTE : INGENIEUR D'ETUDE DE PRIX (H/F) Start People, filiale du groupe USG People, recrute pour l'un de ses clients (spécialisé dans la construction de réseaux ...",
+        "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?lieux=571639",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Google Developer - 29 avril 2022 | Indeed.com",
+        "data": "Marketing Internship ; Candidature mobile facile. Plusieurs postes à pourvoir ; EmployerEmployeur actif il y a 20 jours ...",
+        "url": "https://fr.indeed.com/Emplois-Google-Developer",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois : Full Stack Google - 4 mai 2022 | Indeed.com",
+        "data": "Développeur Full Stack H/F. B94. Versailles (78). 40 000 &#8364; par ...",
+        "url": "https://fr.indeed.com/Emplois-Full-Stack-Google",
+        "type": "simple"
+    },
+    {
+        "title": "Emplois chez Google, Paris | Glassdoor",
+        "data": "Les chercheurs d'emploi intéressés par Google ont également consulté. Précédent ... Sales and Marketing Apprenticeship, 2022 September Start. Paris+30 j.",
+        "url": "https://www.glassdoor.fr/Emplois/Google-Paris-Emplois-EI_IE9079.0,6_IL.7,12_IC2881970.htm",
+        "type": "simple"
+    },
+    {
+        "title": "9 000 offres d'emploi Google (France) (550 nouvelles offres) - LinkedIn",
+        "data": "Termes manquants :alternancedeveloper?40",
+        "url": "https://fr.linkedin.com/jobs/google-emplois",
+        "type": "with_rate"
+    },
+    {
+        "title": "Offre Emploi CDD Alternance Développement d'Api Google avec la ...",
         "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/windows-10-mode-sans-echec/",
+        "url": "https://www.hellowork.com/fr-fr/emplois/18860910.html",
         "type": "with_rate"
     },
     {
-        "title": "IONOS by 1&amp;1 Developer Center: DevOps Cloud Central Community",
-        "data": "A Cloud computing community website for DevOps and Cloud Developer professionals and IONOS by 1&amp;1 users.",
-        "url": "https://devops.ionos.com/",
+        "title": "Consultant SEO H/F - alternance - Eskimoz - Welcome to the Jungle",
+        "data": "Eskimoz accompagne les entreprises de toutes tailles ( ...",
+        "url": "https://www.welcometothejungle.com/fr/companies/eskimoz/jobs/consultant-seo-h-f-alternance_boulogne-billancourt",
         "type": "simple"
     },
     {
-        "title": "Add a Windows 10 user: how it's done - Ionos",
-        "data": "Step 1: View settings · Step 2: Start creating Windows 10 user accounts · Step 3: Perform or skip direct linking with a Microsoft account · Step 4: ...",
-        "url": "https://www.ionos.com/digitalguide/server/configuration/add-a-windows-10-user/",
-        "type": "simple"
+        "title": "Humind School - La 1ère Ecole Sales &amp; Business Development ...",
+        "data": "Termes manquants :alternance| Doit inclure :alternance",
+        "url": "https://www.humindschool.com/",
+        "type": "with_rate"
     },
     {
-        "title": "Startup Guide - IONOS",
-        "data": "Quand des rêves deviennent réalité : de certaines start-ups sont nées des entreprises qui pèsent des milliards. Si vous souhaitez aussi trouver une idée de ...",
-        "url": "https://www.ionos.fr/startupguide/",
-        "type": "simple"
+        "title": "MyBizDev | Recrutement et Formation de Business Developer en ...",
+        "data": "Termes manquants :alternance| Doit inclure :alternance",
+        "url": "https://mybizdev.io/",
+        "type": "with_rate"
     },
     {
-        "title": "comment se connecter à l'adresse IP 127.0.0.1 - Localhost - Ionos",
+        "title": "42 | Apprendre à coder. Casser les codes. Formation gratuite",
         "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos.fr/digitalguide/serveur/know-how/localhost/",
+        "url": "https://42.fr/",
         "type": "with_rate"
     },
     {
-        "title": "Qu'est-ce que StartTLS et comment le tester ? - IONOS",
-        "data": "La commande StartTLS permet de lancer une communication par email chiffrée avec le protocole TLS. Cela apporte une grande flexibilité, ...",
-        "url": "https://www.ionos.fr/digitalguide/email/aspects-techniques/starttls/",
-        "type": "simple"
-    },
-    {
-        "title": "Serveurs Cloud à partir de 5 &#8364; par mois | IONOS by 1&amp;1",
-        "data": "100 Go pour 7,20 &#8364; HT/mois (8,64 &#8364; TTC) - facturation à la minute. Trafic illimité. inclus. Bande passante. Connexion externe pour chaque serveur jusqu'à ...",
-        "url": "https://www.ionos.fr/cloud/serveurs-cloud",
-        "type": "simple"
-    },
-    {
-        "title": "Comment bien utiliser l'analyse Web - IONOS",
-        "data": "Cela peut sembler fou mais ça fonctionne pour les entreprises comme pour les start-ups. Nous expliquons ce qu'est le crowdsourcing, montrons des exemples ...",
-        "url": "https://www.ionos.fr/digitalguide/web-marketing/analyse-web/",
-        "type": "simple"
-    },
-    {
-        "title": "Boutiques IONOS vs boutiques en ligne gratuites",
-        "data": "12 mois à 1 &#8364; HT/mois (1,20 &#8364; TTC) puis 19 &#8364; HT/mois (22,80 &#8364; TTC) ... Aux particuliers ou indépendants; Aux start-ups; Aux PME.",
-        "url": "https://www.ionos.fr/solutions-ecommerce/boutique-en-ligne-gratuite",
-        "type": "simple"
-    },
-    {
-        "title": "Démarrage automatique sous Windows 10 - Ionos",
-        "data": "C:\\Users\\BENUTZERNAME\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup ... 28.07.20; Configuration.",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/demarrage-automatique-sous-windows-10/",
-        "type": "simple"
-    },
-    {
-        "title": "Serveur FTP Ubuntu : Installation et configuration - IONOS",
-        "data": "Ce protocole permet de transporter les données via les ports 20 (client) et ... le paramètre \\\"start\\\" par \\\"stop\\\" dans la commande précédente.",
-        "url": "https://www.ionos.fr/digitalguide/serveur/configuration/serveur-ftp-ubuntu-installation-et-configuration/",
-        "type": "simple"
-    },
-    {
-        "title": "1&amp;1 IONOS : le leader européen du Cloud et de l'hébergement web",
-        "data": "La société d'hébergement britannique a été acquise par United Internet en 2006. Le 20 août de la même année, 1&amp;1 fait son entrée sur le marché ...",
-        "url": "https://www.lebigdata.fr/1and1-ionos-tout-savoir",
-        "type": "simple"
-    },
-    {
-        "title": "Nextcloud Hub - On-Demand Webinar - IONOS Cloud",
-        "data": "Gunnar has more than 20 years of experience in sales and consulting in various industries. His particular expertise lies in the areas of VoIP and security ...",
-        "url": "https://cloud.ionos.at/webinare/nextcloud-viakom-webinar-en",
-        "type": "simple"
-    },
-    {
-        "title": "Serveurs Cloud à partir de 5 &#8364; par mois | IONOS by 1&amp;1",
-        "data": "30 Go. 0,0069 &#8364; HT/heure (0,0083 &#8364; TTC) max. 5 &#8364;/mois (6 &#8364; TTC) ... Vous créez une start-up et n'êtes pas encore certain(e) des exigences auxquelles votre ...",
-        "url": "https://www.ionos.fr/cloud/serveurs-cloud",
-        "type": "simple"
-    },
-    {
-        "title": "Boutiques IONOS vs boutiques en ligne gratuites",
-        "data": "Comparez les boutiques IONOS aux solutions de boutiques en ligne gratuites. Profitez de 30 jours satisfait ou remboursé.",
-        "url": "https://www.ionos.fr/solutions-ecommerce/boutique-en-ligne-gratuite",
-        "type": "simple"
-    },
-    {
-        "title": "IONOS Cloud: No compromise cloud performance",
-        "data": "IONOS Cloud supports businesses of all sizes with their digitalization. ... Start a free, 30-day trial with no obligation to buy, and no setup fees.",
-        "url": "https://cloud.ionos.com/",
-        "type": "simple"
-    },
-    {
-        "title": "IONOS by 1&amp;1 » Hosting Provider | Websites. Domains. Server.",
-        "data": "Termes manquants :30| Doit inclure :30",
-        "url": "https://www.ionos.com/",
-        "type": "with_rate"
-    },
-    {
-        "title": "Ce qu'il faut savoir sur l'hébergeur IONOS 1&amp;1 - DigiTechnologie",
-        "data": "Avec plus de 30 ans d'expérience, IONOS est considéré comme étant un géant incontestable des services en ligne.",
-        "url": "https://digitechnologie.com/avis-hebergeur-ionos-1and1/",
-        "type": "simple"
-    },
-    {
-        "title": "Page de statut ionos.fr",
-        "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos-status.fr/",
-        "type": "with_rate"
-    },
-    {
-        "title": "Ionos.fr Review: Prix, concurrents et score du site Web - Sitechecker",
-        "data": "Social signals of Ionos.fr ... Siteground. from$4.29/mo. 30-day money-back guarantee. Visit website Read review ... WHOIS information about Ionos.fr ...",
-        "url": "https://sitechecker.pro/fr/web-hosting/ionos.fr/",
-        "type": "simple"
-    },
-    {
-        "title": "Mentions Légales - Pouce Café",
-        "data": "1&amp;1 IONOS Cloud GmbH. Greifswalder Str. 207 ... Téléphone :+49 30 57700 850 ... Newsletter Printanière du Pouce Café : partenariat avec la Start-up Syncly ...",
-        "url": "https://www.poucecafe.fr/mentions-legales/",
-        "type": "simple"
-    },
-    {
-        "title": "SiteGround vs IONOS 2022 - Nous avons un vainqueur clair.",
-        "data": "IONOS vs SiteGround ; 12 forfaits de 3,68 &#8364; à 202,44 &#8364; · Cloud Server XS. 4,00 &#8364; / M · 2.4. 2 avis. Espace : 30 GB; Bande passante : Illimité. Afficher le forfait ...",
-        "url": "https://fr.hostadvice.com/tools/web-hosting-comparison/11-vs-siteground/",
-        "type": "simple"
-    },
-    {
-        "title": "Wix vs Jimdo vs Ionos - Analyse comparée point par point",
-        "data": "Comparatif complet des logiciels de création de sites Ionos (by 1&amp;1), ... START (9&#8364;/mois) : Une offre parfaite pour votre projet personnel, ...",
-        "url": "https://www.lafabriquedunet.fr/blog/wix-vs-jimdo-vs-ionos/",
-        "type": "simple"
-    },
-    {
-        "title": "Hébergement Web à partir d'1 &#8364; HT/mois avec domaine inclus - Ionos",
-        "data": "Termes manquants :start=| Doit inclure :start=",
-        "url": "https://www.ionos.fr/hebergement/hebergement-web",
-        "type": "with_rate"
-    },
-    {
-        "title": "Serveurs Cloud à partir de 5 &#8364; par mois | IONOS by 1&amp;1",
-        "data": "40 Go. 0,0111 &#8364; HT/heure (0,0133 &#8364; TTC) max. 8 &#8364;/mois (9,60 &#8364; TTC) ... Vous créez une start-up et n'êtes pas encore certain(e) des exigences auxquelles ...",
-        "url": "https://www.ionos.fr/cloud/serveurs-cloud",
-        "type": "simple"
-    },
-    {
-        "title": "Startup Guide - IONOS",
-        "data": "Termes manquants :40| Doit inclure :40",
-        "url": "https://www.ionos.fr/startupguide/",
-        "type": "with_rate"
-    },
-    {
-        "title": "IONOS by 1&amp;1 » Hosting Provider | Websites. Domains. Server.",
-        "data": "Termes manquants :40| Doit inclure :40",
-        "url": "https://www.ionos.com/",
-        "type": "with_rate"
-    },
-    {
-        "title": "Hosting Solutions | Find the perfect offer for your project - Ionos",
-        "data": "What makes IONOS so reliable? For starters &#8212; 99.99% uptime. ... IONOS Web Hosting features: ... Price, Starting at $0.50/month, Starting at $40/month ...",
-        "url": "https://www.ionos.com/hosting/web-hosting-solutions",
-        "type": "simple"
-    },
-    {
-        "title": "1&amp;1 IONOS : le leader européen du Cloud et de l'hébergement web",
-        "data": "Il se décline en 5 forfaits différents allant de 1,20 euro par mois à 14,40 euros par mois. Serveur dédié. Cet hébergement dédié répondra aux ...",
-        "url": "https://www.lebigdata.fr/1and1-ionos-tout-savoir",
-        "type": "simple"
-    },
-    {
-        "title": "IONIS 361, l'incubateur de start-up à Paris, Montpellier et Toulouse",
-        "data": "Termes manquants :ionos?| Doit inclure :ionos?",
-        "url": "https://www.ionis361.com/",
-        "type": "with_rate"
-    },
-    {
-        "title": "SiteGround vs IONOS 2022 - Nous avons un vainqueur clair.",
-        "data": "SiteGround vs IONOS comparaison des performances, des fonctionnalités, des offres et des tarifs ... IONOS vs SiteGround ... 3 forfaits de 18,40 &#8364; à 184,03 &#8364;.",
-        "url": "https://fr.hostadvice.com/tools/web-hosting-comparison/11-vs-siteground/",
-        "type": "simple"
-    },
-    {
-        "title": "IONOS Société Fondateur Levée fonds CA Activité Start-Up ...",
-        "data": "Ionos est une start-up du secteur édfition de logiciels (EdTech / marché B2B &amp; B2C) qui a ... marchés (B2C, B2B), technologies (Next40, PropTech, RegTech &#8230;) ...",
-        "url": "https://www.annuaire-startups.pro/startup/ionos/",
+        "title": "Parcourir toutes les annonces - Région Sud",
+        "data": "Community Manager en alternance ... Chargé Webmarketing Alternance ... et serez chargé(e) de développer et de fidéliser votre portefeuille client.",
+        "url": "https://lafrenchtech-aixmarseille.fr/petites-annonces/parcourir-toutes-les-annonces/557/alternance/",
         "type": "simple"
     }
 ]

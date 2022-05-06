@@ -72,13 +72,28 @@ async function fetchResult(search, page = 0) {
     return parsePage(html)
 }
 
+async function autoComplete(query, nb = 10) {
+    return fetch(`https://www.google.com/complete/search?q=${encodeURIComponent(query)}&client=gws-wiz&hl=fr&cp=${nb}`, {
+        Headers: {
+            origin: "https://www.google.com",
+        }
+    })
+        .then(res => res.text())
+        .then(res => JSON.parse(/\[.*\]/gmi.exec(res)?.[0] || null))
+        .then(res => res[0].map(a => a[0].replace(/<\/?b>/g, '').trim()))
+}
 async function main() {
 
     const search = process.argv.slice(2)
 
-    const page1 = await Promise.all(Array.from({ length: 5 }, (_, i) => fetchResult(search, i * 10)))
+    const auto = await autoComplete(search.join(' '))
 
-    await fs.writeFile('scraped.json', JSON.stringify(page1.flat(), null, 4), 'utf-8')
+    console.log(auto)
+
+    const pages = await Promise.all(Array.from({ length: 5 }, (_, i) => fetchResult(search, i * 10)))
+
+    await fs.writeFile('scraped.json', JSON.stringify(pages.flat(), null, 4), 'utf-8')
+
 }
 
 
