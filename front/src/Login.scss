@@ -1,0 +1,52 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+main.login {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    animation: fade-in 0.8s 1s forwards;
+
+    div.content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        div.avatar {
+            width: 150px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 32px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(255, 255, 255);
+            box-shadow: inset 10px 10px 30px rgba(255, 255, 255, .4), inset -10px -10px 20px rgba(0, 0, 0, .3);
+        }
+        h2 {
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 18px;
+            font-family: var(--roboto);
+        }
+    }
+}

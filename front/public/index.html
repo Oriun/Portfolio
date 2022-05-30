@@ -13,6 +13,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="preload" as="image" href="/img/monterey-bg.jpg"/>
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -216,7 +217,8 @@
     }
     const loading_screen = document.getElementById('loading')
     const loading_bar = document.querySelector('#loading-bar > div')
-    window.app_start = new Promise(resolve => {
+    window.app_ready = sessionStorage.app_ready
+    window.app_start = window.app_ready ? Promise.resolve(true) : new Promise(resolve => {
       function updateLoadingBar() {
         // Fake load for approx 10 seconds
         const percent = Math.ceil(sigmoid((Date.now() - start) / 2_700) * 100)
@@ -227,7 +229,10 @@
       updateLoadingBar()
     }).then(res => {
       console.timeEnd('load')
-      window.app_ready = Date.now() - start
+      sessionStorage.app_ready = window.app_ready = Date.now() - start
+      
+      console.log(document.fullscreenElement)
+      if(document.fullscreenElement) return Promise.resolve()
       loading_screen.classList.add('second-stage')
       let end_second_stage;
       return new Promise(resolve => {

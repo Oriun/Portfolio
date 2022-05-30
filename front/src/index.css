@@ -8,6 +8,7 @@ body {
   --sf: "Roboto", sans-serif;
   /* --window-transition-duration: .1s; */
   --blue: #0070c9;
+  --roboto: "Roboto", sans-serif;
 }
 
 code {

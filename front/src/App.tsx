@@ -18,7 +18,6 @@ const typeToCompoent: { [key: string]: (props: any) => JSX.Element } = {
 };
 
 const App = (): JSX.Element => {
-  const [active, activate] = React.useState<boolean>(false)
   const { windows, background } = System.useSystem((data) => ({
     windows: data.activeWindows,
     background: data.background,
@@ -31,13 +30,6 @@ const App = (): JSX.Element => {
       return <Component Head={win.name} winKey={win.key} {...win} />;
     });
   }, [windows]);
-  React.useEffect(()=>{
-    if(!active) {
-      // @ts-ignore
-      window.app_start.then(activate)
-    }
-  },[])
-  if(!active) return <></>
   return (
     <main style={{ backgroundImage: `url("${background}")` }} >
       <Topbar />
